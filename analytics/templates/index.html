@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properlytics</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'analytics/styles.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="searchpanel_container">
+        <div class="searchPanel_Box">
+            <h1 class="title">Property Analytics</h1>
+            <h2 class="subTitle">Enter a UK postcode</h2>
+            <div class="searchPanel__form" role="form">
+                <div class="inlineSearchControls">
+                    <div class="inputfield_container">
+                        <input class="ksc_inputText ksc_typeAheadInputField" name="typeAheadInputField" type="text" placeholder=" 'NW8 ONL'" autocomplete="off">
+                    </div>
+                    <button class="ksc_button large primary searchPanelControls " color="primary">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="resultspanel_container">
+        <div class="resultspanel_Box">
+            <h1 class="title">Search Results</h1>
+        </div>
+        <div class="elements_container">
+            <div class="geomap">Map</div>
+        </div>
+    </div>
+</body>
+</html>
